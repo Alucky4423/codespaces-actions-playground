@@ -1,0 +1,19 @@
+name: Test install.sh
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-install:
+    name: test install.sh
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup
+      run: |
+        mkdir -p ./.config/git
+        touch $HOME/.config/git/config
+        pwd
+        echo $HOME
