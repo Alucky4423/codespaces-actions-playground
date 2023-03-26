@@ -14,6 +14,6 @@ jobs:
     - name: setup
       run: |
         mkdir -p ./.config/git
-        touch $HOME/.config/git/config
+        touch ./.config/git/config
         pwd
         echo $HOME
